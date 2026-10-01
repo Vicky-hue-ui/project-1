@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>songs </title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+
+        }
+        h1{
+            text-align: center;
+        }
+        #song {
+            border: 2px, solid greenyellow;
+            border-radius: 20%;
+            background-color: aquamarine;
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> listen to you favrouites</h1>
+    <div id = "songs";
+
+    <% song.forEach(song => {%>
+        <div id = "song">
+            <h4><%=song.name%></h4>
+            <h6><%=song.artist%></h6>
+            <small><%= song.album%></small>
+        </div>
+        <%})%>
+    </div>
+    
+    
+</body>
+</html>
